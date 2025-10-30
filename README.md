@@ -152,7 +152,7 @@ If backend is not running, the app automatically:
 ## 👨‍💻 Author
 
 **Ghanshyam Singh**
-💼 B.Tech CSE | Lucknow University
+💼 B.Tech CSE
 📧 [ghanshyam2005singh@gmail.com](mailto:ghanshyam2005singh@gmail.com)
 💬 Built with ❤️ using Next.js and Express
 
