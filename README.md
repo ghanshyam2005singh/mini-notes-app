@@ -1,36 +1,159 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Notes App — Next.js + Express
 
-## Getting Started
+A simple and elegant **full-stack Notes App** built using **Next.js (frontend)** and **Express.js (backend)**.  
+Users can **create**, **view**, and **delete** notes — stored either **locally** (via browser LocalStorage) or via **REST API**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- ✏️ Create and delete notes
+- 💾 Save notes in browser localStorage (offline mode)
+- 🌐 Optional backend API (Express + in-memory data)
+- 🧭 Modern UI with TailwindCSS
+- 🔔 Toast notifications for actions
+- 📱 Fully responsive and mobile-friendly
+- 🧱 Modular folder structure (clean code)
+
+---
+
+## 🧩 Tech Stack
+
+### Frontend
+- [Next.js 14+](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [React Hot Toast](https://react-hot-toast.com/)
+
+### Backend
+- [Express.js](https://expressjs.com/)
+- [CORS](https://www.npmjs.com/package/cors)
+- [Body-parser](https://www.npmjs.com/package/body-parser)
+- [Nodemon](https://www.npmjs.com/package/nodemon) (for development)
+
+---
+
+## 🗂️ Project Structure
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+notes-app/
+│
+├── frontend/                # Next.js App
+│   ├── app/
+│   │   ├── page.tsx         # Main Notes UI
+│   │   ├── layout.tsx       # Navbar, Footer, Toaster
+│   │   ├
+│   │   │   
+│   │   │   
+│   │   └── components/
+│   │       └── Footer.tsx
+│   │       └── Navbar.tsx
+│   ├── globals.css
+│   ├── tailwind.config.js
+│   └── package.json
+│
+└── backend/                 # Express API
+├── server.js
+├── routes/
+│   └── notesRoutes.js
+├── controllers/
+│   └── notesController.js
+└── package.json
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+````
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## ⚙️ Installation & Setup
 
-To learn more about Next.js, take a look at the following resources:
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/notes-app.git
+cd notes-app
+````
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2️⃣ Setup Backend
 
-## Deploy on Vercel
+```bash
+cd backend
+npm install
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Backend will run on 👉 **[http://localhost:5000](http://localhost:5000)**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+### 3️⃣ Setup Frontend
+
+```bash
+cd ../frontend
+npm install
+npm run dev
+```
+
+Frontend will run on 👉 **[http://localhost:3000](http://localhost:3000)**
+
+---
+
+## 🧭 API Endpoints
+
+| Method | Endpoint         | Description     |
+| ------ | ---------------- | --------------- |
+| GET    | `/api/notes`     | Get all notes   |
+| POST   | `/api/notes`     | Create new note |
+| DELETE | `/api/notes/:id` | Delete a note   |
+
+### Example (POST)
+
+```json
+{
+  "title": "Meeting Notes",
+  "desc": "Discuss project timeline"
+}
+```
+
+---
+
+## 💡 LocalStorage Mode
+
+If backend is not running, the app automatically:
+
+* Saves notes in `localStorage`
+* Loads notes when browser refreshes
+* Works completely offline
+
+---
+
+## ✨ UI Features
+
+* Sticky **Navbar** with navigation
+* Clean **Footer**
+* Beautiful **toast messages** for success/error
+* Fully **responsive** layout (works on mobile and desktop)
+
+---
+
+---
+
+## 🧰 Future Improvements
+
+* ✅ Connect with MongoDB (persistent database)
+* 🧑‍💻 User authentication (JWT)
+* 🔍 Search & filter notes
+* 🌗 Dark mode toggle
+* 📅 Edit existing notes
+
+---
+
+## 👨‍💻 Author
+
+**Ghanshyam Singh**
+💼 B.Tech CSE | Lucknow University
+📧 [ghanshyam2005singh@gmail.com](mailto:ghanshyam2005singh@gmail.com)
+💬 Built with ❤️ using Next.js and Express
+
+---
