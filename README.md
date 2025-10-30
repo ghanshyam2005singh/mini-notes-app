@@ -49,7 +49,7 @@ notes-app/
 │   │   └── components/
 │   │       └── Footer.tsx
 │   │       └── Navbar.tsx
-│   ├── globals.css
+│   
 │   ├── tailwind.config.js
 │   └── package.json
 │
@@ -80,7 +80,7 @@ cd notes-app
 ```bash
 cd backend
 npm install
-npm run dev
+node server.js
 ```
 
 Backend will run on 👉 **[http://localhost:5000](http://localhost:5000)**
