@@ -21,7 +21,7 @@ Users can **create**, **view**, and **delete** notes — stored either **locally
 
 ### Frontend
 - [Next.js 14+](https://nextjs.org/)
-- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [React Hot Toast](https://react-hot-toast.com/)
 
